@@ -52,9 +52,20 @@ h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  color: $grayLight;
+  color: #333;
+  a {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: normal;
+  color: #333;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 p {
@@ -173,3 +184,20 @@ input {
   @extend .control-group;
   @extend .error;
  }
+
+ /* paintings */
+
+.painting {
+  max-height: 240px;
+}
+
+.margin_top {
+  margin-top: 60px;
+}
+
+.gallery {
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 15px 0 15px 0;
+}

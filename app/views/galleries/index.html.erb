@@ -1,10 +1,17 @@
 <% title "Galleries" %>
+<h1>Gallerie Überblick</h1>
 
-<% for gallery in @galleries %>
-  <div class="gallery">
-    <h2><%= link_to gallery.name, gallery %></h2>
-    Paintings: <%= gallery.paintings.size %>
-  </div>
-<% end %>
+<div class="row">
+	<% for gallery in @galleries %>
+		<div class="span5">
+		  <div class="gallery">
+		    <h2><%= link_to gallery.name, gallery %></h2>
+		    <h3>Paintings: <%= gallery.paintings.size %></h3>	    
+		  </div>
+		</div>
+	<% end %>
+</div>
 
-<p><%= link_to "New Gallery", new_gallery_path %></p>
+<div class="margin_top">
+	<p><%= link_to "New Gallery", new_gallery_path %></p>
+</div>
