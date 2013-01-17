@@ -5,7 +5,7 @@
   <% for painting in @gallery.paintings %>
     <div class="span4">
       <div class="painting">
-        <%= image_tag painting.image if painting.image? %>
+        <%= image_tag(painting.image, :class => "crop_it")%>
       </div>
       <div class="name"><%= painting.name %></div>
       <div class="actions">
